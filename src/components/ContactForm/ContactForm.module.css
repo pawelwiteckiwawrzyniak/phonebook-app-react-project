@@ -1,0 +1,28 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  border: 2px black solid;
+  border-radius: 5px;
+  padding: 20px;
+  width: 500px;
+  row-gap: 10px;
+}
+
+.form__inputBox {
+  width: 250px;
+  padding: 5px;
+  border: 1px rgba(124, 124, 124, 0.986) solid;
+  border-radius: 5px;
+}
+
+.form__submitButton {
+  margin-top: 20px;
+  width: 100px;
+  border: 1px rgba(124, 124, 124, 0.986) solid;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.form__submitButton:active {
+  opacity: 50%;
+}

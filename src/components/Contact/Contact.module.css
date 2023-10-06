@@ -1,0 +1,11 @@
+.button {
+  margin-left: 10px;
+  width: 50px;
+  border: 1px rgba(124, 124, 124, 0.986) solid;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.button:active {
+  opacity: 50%;
+}

@@ -1,0 +1,12 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.filter__inputBox {
+  border: 1px rgba(124, 124, 124, 0.986) solid;
+  border-radius: 5px;
+  width: 200px;
+  padding: 5px;
+}
