@@ -1,18 +1,23 @@
 import { useDispatch } from 'react-redux';
 import { setFilter } from 'redux/filterSlice';
-import css from './ContactFilter.module.css';
+import { TextField } from '@mui/material';
+import Typography from '@mui/material/Typography';
 
 export const ContactFilter = () => {
   const dispatch = useDispatch();
   const handleFilter = filter => dispatch(setFilter(filter));
 
   return (
-    <div className={css.filter}>
-      <span className={css.filter__title}>Find contacts by name</span>
-      <input
-        className={css.filter__inputBox}
-        type="text"
+    <div style={{ marginLeft: 20 }}>
+      <Typography component="h1" variant="h5">
+        Find your contacts
+      </Typography>
+      <TextField
+        margin="normal"
+        label="Filter"
         name="filter"
+        type="text"
+        autoFocus
         onChange={event => {
           handleFilter(event.target.value.toLowerCase());
         }}

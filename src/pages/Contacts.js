@@ -22,7 +22,6 @@ export default function Contacts() {
           <title>Phonebook</title>
         </Helmet>
         <ContactForm />
-        <h2>Contacts</h2>
         <ContactFilter />
         {isLoading ? <p>Loading...</p> : <ContactList />}
       </Fragment>
