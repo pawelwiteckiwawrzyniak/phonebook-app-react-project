@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Fragment } from 'react';
 import { useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/operations';
-import css from './Contact.module.css';
+import { Button } from '@mui/material';
 
 export const Contact = ({ contact }) => {
   const dispatch = useDispatch();
@@ -14,9 +14,14 @@ export const Contact = ({ contact }) => {
       <p>
         {contact.name}: {contact.number}
       </p>
-      <button type="button" onClick={handleDelete} className={css.button}>
+      <Button
+        type="button"
+        variant="contained"
+        onClick={handleDelete}
+        sx={{ marginLeft: 2, height: 25 }}
+      >
         Delete
-      </button>
+      </Button>
     </Fragment>
   );
 };
