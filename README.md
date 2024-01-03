@@ -1,113 +1,64 @@
-# React homework template
+# Phonebook App - project
 
-Этот проект был создан при помощи
-[Create React App](https://github.com/facebook/create-react-app). Для знакомства
-и настройки дополнительных возможностей
-[обратись к документации](https://facebook.github.io/create-react-app/docs/getting-started).
+- This is a web application developed using JavaScript, React, Redux, Axios, MUI Icons, and Emotion for styling. The application provides users with features such as user registration, login, logout, as well as the ability to manage their phone contacts effectively. Users can add, delete, and filter contacts based on specific search phrases.
+- Live version [_here_](https://pawelwiteckiwawrzyniak.github.io/phonebook-app-react-project/).
 
-## Создание репозитория по шаблону
+## Table of Contents
 
-Используй этот репозиторий организации GoIT как шаблон для создания репозитория
-своего проекта. Для этого нажми на кнопку `«Use this template»` и выбери опцию
-`«Create a new repository»`, как показано на изображении.
+- [General Info](#general-information)
+- [Technologies Used](#technologies-used)
+- [Project Features](#project-features)
+- [Project Objectives](#project-objectives)
+- [Setup](#setup)
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
+## General Information
 
-На следующем шаге откроется страница создания нового репозитория. Заполни поле
-его имени, убедись что репозиторий публичный, после чего нажми кнопку
-`«Create repository from template»`.
+- This is a simple project created to expand knowledge and gain
+  experience in programming.
 
-![Creating repo from a template step 2](./assets/template-step-2.png)
+## Technologies Used:
 
-После того как репозиторий будет создан, необходимо перейти в настройки
-созданного репозитория на вкладку `Settings` > `Actions` > `General` как
-показано на изображении.
+- JavaScript
+- React
+- Redux
+- Axios
+- MUI Icons
+- Emotion library
 
-![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
+## Project Features:
 
-Проскролив страницу до самого конца, в секции `«Workflow permissions»` выбери
-опцию `«Read and write permissions»` и поставь галочку в чекбоксе. Это
-необходимо для автоматизации процесса деплоя проекта.
+- User Authentication:
+  - Users can register for an account, log in, and securely log out, ensuring a personalized experience.
+    ![Register](./assets/register.png)
+    ![Login](./assets/login.png)
+    ![Logout](./assets/logout.png)
+- Phonebook Management:
+  - Users can add new phone contacts, providing details such as name and phone number.
+    ![Add](./assets/add.png)
+  - Contacts can be deleted, offering flexibility in managing the phonebook.
+  - The application enables users to filter contacts based on specific search phrases, enhancing accessibility.
+    ![Filter](./assets/filter.png)
+- Stylish and Responsive Design:
+  - Emotion is employed for styling, ensuring a visually appealing and responsive design for a seamless user experience.
+  - The application is designed to be responsive, adapting to users' screen sizes.
+    ![Design](./assets/responsive.png)
+    
+## Project Objectives:
 
-![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
+- React and Redux Integration:
+  - Developing proficiency in integrating React for building user interfaces and Redux for state management.
+- User Authentication and Secure Communication:
+  - Implementing user authentication features and utilizing Axios for secure communication with the backend server.
+- Interactive User Experience:
+  - Creating an interactive interface for adding, deleting, and filtering phone contacts.
+- Stylish Design with Emotion:
+  - Leveraging Emotion for efficient styling, allowing for a visually pleasing and responsive design.
 
-Теперь у тебя есть личный репозиторий проекта, со структурой файлов и папок
-репозитория-шаблона. Далее работай с ним как с любым другим личным репозиторием,
-клонируй его себе на компьютер, пиши код, делай коммиты и отправляй их на
-GitHub.
+## Setup
 
-## Подготовка к работе
+To run this project, install it locally using npm:
 
-1. Убедись что на компьютере установлена LTS-версия Node.js.
-   [Скачай и установи](https://nodejs.org/en/) её если необходимо.
-2. Установи базовые зависимости проекта командой `npm install`.
-3. Запусти режим разработки, выполнив команду `npm start`.
-4. Перейди в браузере по адресу [http://localhost:3000](http://localhost:3000).
-   Эта страница будет автоматически перезагружаться после сохранения изменений в
-   файлах проекта.
-
-## Деплой
-
-Продакшн версия проекта будет автоматически проходить линтинг, собираться и
-деплоиться на GitHub Pages, в ветку `gh-pages`, каждый раз когда обновляется
-ветка `main`. Например, после прямого пуша или принятого пул-реквеста. Для этого
-необходимо в файле `package.json` отредактировать поле `homepage`, заменив
-`your_username` и `your_repo_name` на свои, и отправить изменения на GitHub.
-
-```json
-"homepage": "https://your_username.github.io/your_repo_name/"
 ```
-
-Далее необходимо зайти в настройки GitHub-репозитория (`Settings` > `Pages`) и
-выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
-это небыло сделано автоматически.
-
-![GitHub Pages settings](./assets/repo-settings.png)
-
-### Статус деплоя
-
-Статус деплоя крайнего коммита отображается иконкой возле его идентификатора.
-
-- **Желтый цвет** - выполняется сборка и деплой проекта.
-- **Зеленый цвет** - деплой завершился успешно.
-- **Красный цвет** - во время линтинга, сборки или деплоя произошла ошибка.
-
-Более детальную информацию о статусе можно посмотреть кликнув по иконке, и в
-выпадающем окне перейти по ссылке `Details`.
-
-![Deployment status](./assets/deploy-status.png)
-
-### Живая страница
-
-Через какое-то время, обычно пару минут, живую страницу можно будет посмотреть
-по адресу указанному в отредактированном свойстве `homepage`. Например, вот
-ссылка на живую версию для этого репозитория
-[https://goitacademy.github.io/react-homework-template](https://goitacademy.github.io/react-homework-template).
-
-Если открывается пустая страница, убедись что во вкладке `Console` нет ошибок
-связанных с неправильными путями к CSS и JS файлам проекта (**404**). Скорее
-всего у тебя неправильное значение свойства `homepage` в файле `package.json`.
-
-### Маршрутизация
-
-Если приложение использует библиотеку `react-router-dom` для маршрутизации,
-необходимо дополнительно настроить компонент `<BrowserRouter>`, передав в пропе
-`basename` точное название твоего репозитория. Слеш в начале строки обязателен.
-
-```jsx
-<BrowserRouter basename="/your_repo_name">
-  <App />
-</BrowserRouter>
+npm i
+npm start
 ```
-
-## Как это работает
-
-![How it works](./assets/how-it-works.png)
-
-1. После каждого пуша в ветку `main` GitHub-репозитория, запускается специальный
-   скрипт (GitHub Action) из файла `.github/workflows/deploy.yml`.
-2. Все файлы репозитория копируются на сервер, где проект инициализируется и
-   проходит линтинг и сборку перед деплоем.
-3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
-   отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
-   скрипта будет указано в чем проблема.
