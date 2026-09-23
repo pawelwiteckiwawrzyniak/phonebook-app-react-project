@@ -30,6 +30,3 @@ npm i
 npm start
 ```
 
----
-
-
