@@ -30,5 +30,5 @@ npm start
 
 ---
 
-Deprecated
+Deprecated - no longer works
 
