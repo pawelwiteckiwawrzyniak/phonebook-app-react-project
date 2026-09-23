@@ -1,3 +1,5 @@
+Deprecated - no longer works
+
 # Phonebook App - project
 - A React-based Single Page Application (SPA) for managing a personal contact list. The app features user authentication and full contact management capabilities.
 
@@ -30,5 +32,4 @@ npm start
 
 ---
 
-Deprecated - no longer works
 
